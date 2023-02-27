@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /*.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+    body{
+      height: 150vh;
+      width: 150vh;
+      background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 12px;
+    }
+    .container{
+      width: 1030px;
+      height: 550px;
+      background-color: white;
+      border-radius: 25px;
+      position: relative;
+      left: 240px;
+      top: 80px;
+    }
+    h2{
+      position: relative;
+      left: 70px;
+      top: 50px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .parent{
+      position: relative;
+      overflow: hidden;
+      
+
+    }
+    .women-on-desk{
+      position: absolute;
+      left: -50px;
+
+    }
+    .pattern{
+      position: relative;
+      top: -350px;
+      left: -500px;
+      
+    }
+    .ill-box{
+      position: relative;
+      top: -820px;
+      left: -70px;
+     
+    }
+    .Qestion{
+      position: relative;
+      top: -1100px;
+      left: 555px;
+      font-size: 15px;
+  
+    }
+    .arrow{
+      position: relative;
+      top: -1132px;
+      left: 930px;
+    }
+    .qOneAns{
+      position: relative;
+      top: -1125px;
+      left: 555px;
+      font-size: 15px;
+      display: none;
+      
+    }
+    #qStyle:hover{
+      color: hsl(14, 88%, 65%);
+    }
+    p{
+      color: hsl(237, 12%, 33%);
+    }
+    hr{
+      color: black;
+      position: relative;
+      top: -1120px;
+      width: 380px;
+      left: 230px;
+      
+    }
+    .desk, .shadow{
+      display: none;
+    }
+  
+  @media screen and (max-width: 800px){
+    div.text{
+      position: relative;
+      color: red;
+      top: 1250px;
+      left: -550px;
+      font-size: 5px;
+      
+    }
+    hr{
+      position: relative;
+      left: 550px;
+    }
+
+    .women-on-desk, .ill-box, .pattern{
+      display: none;
+
+    }
+    .container{
+        width:400px;
+        height: 600px;
+        position: relative;
+        top: 80px;
+    }
+    h2{
+      position: relative;
+      left: 2px;
+      top: 150px;
+    }
+    .desk{
+      display: block;
+      position: relative;
+      width: 260px;
+      height: 260px;
+      top: -680px;
+      left: 320px; 
+    }
+    .shadow{
+      display: block;
+      position: relative;
+      top: -775px;
+      left: 330px;
+    }
+
+  }
+
+ 
+ 
+ </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h2> FAQ </h2>
+
+ 
+    <div class="parent">
+    <img class= "women-on-desk" src="./images/illustration-woman-online-desktop.svg" alt="WomenOnDesk">
+    <img class="pattern" src="./images/bg-pattern-desktop.svg" alt="">
+    </div>
+    <img class="ill-box" src="./images/illustration-box-desktop.svg" alt="illustration-box-desktop">
+
+  <div class="text">
+
+  <div>
+   <p class="Qestion" id="qStyle"> How many team members can I invite? </p>
+   <img class="arrow" src="./images/icon-arrow-down.svg">
+   <p class="qOneAns">You can invite up to 2 additional users on the Free plan.<br>There is no limit on 
+    team members for the Premium plan.</p>
+   </div>
+
+    <hr>
+
+    <div style="position: relative; top: -2px;">
+    <p class="Qestion" id="qStyle">  What is the maximum file upload size? </p>
+   <img class="arrow" src="./images/icon-arrow-down.svg">
+   <p class="qOneAns">No more than 2GB. All files in your account must fit<br> your allotted storage space.</p>
+    </div>
+
+    <hr>
+
+    <div style="position: relative; top: -2px;">
+    <p class="Qestion" id="qStyle">   How do I reset my password? </p>
+   <img class="arrow" src="./images/icon-arrow-down.svg">
+   <p class="qOneAns"> Click “Forgot password” from the login page or <br>“Change password” from your profile page.<br>
+    A reset link will be emailed to you.</p>
+    </div>
+
+    <hr>
+
+    <div style="position: relative; top: -2px;">
+    <p class="Qestion" id="qStyle">  Can I cancel my subscription? </p>
+   <img class="arrow" src="./images/icon-arrow-down.svg">
+   <p class="qOneAns">Yes! Send us a message and we’ll process your request<br> no questions asked.</p>
+    </div>
+
+    <hr>
+
+    <div style="position: relative; top: -2px;">
+    <p class="Qestion" id="qStyle"> Do you provide additional support? </p>
+   <img class="arrow" src="./images/icon-arrow-down.svg">
+   <p class="qOneAns">Chat and email support is available 24/7. Phone lines <br>are open during normal business hours.</p>
+    </div>
+
+    <hr>
+   
+  
+
+  </div>
+  </div>
+
+</div>
+
+<img class="desk" src="./images/illustration-woman-online-mobile.svg">
+<img class="shadow" src="./images/bg-pattern-mobile.svg">
+
+<script>
+  function handleClick(targetNum){
+    let open = false;
+    return function (){
+      if(open){
+      document.querySelectorAll(".qOneAns")[targetNum].style.display = "none";
+      document.querySelectorAll(".arrow")[targetNum].style.transform = "rotate(360deg)";
+    }
+    else{
+      document.querySelectorAll(".qOneAns")[targetNum].style.display = "block";
+      document.querySelectorAll(".arrow")[targetNum].style.transform = "rotate(180deg)";
+    }
+    open = !open;
+  
+  }
+}
+
+for(var i = 0; i <= 4; i++){
+  document.querySelectorAll("#qStyle")[i].addEventListener("click", handleClick(i));
+
+}
+</script>
+
+</body>
+</html>
